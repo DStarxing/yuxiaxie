@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三骰玩法</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/asset.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<!-- 页面容器 -->
+	<div class="box">
+	<!-- 顶部导航栏开始 -->
+		<div name="navigator" class="navigator">
+		<div name='left-nav' class="left-nav">
+		<div name='logo' class="logo"><a href="#"><img src="./images/timg.jpg" alt=""></a></div>
+		<div name='username' class="username"><a href="./userinfo.html">阿狸是小松鼠</a></div>
+		<div name='money' class="money"><a href="#">余额：123456.00</a></div>
+		</div>
+		<div>
+		<button class="btn btn-success btn-primary btn-lg" onclick="javascript:window.location='./two.html'">两骰</button>&nbsp;/&nbsp;<button class="btn btn-primary btn-success btn-lg" onclick="javascript:window.location='./three.html'">三骰</button>
+		</div>
+		<div name='right-nav' class="right-nav">
+		<div><a href="./index.html"><img src="" alt="">首页</a></div>
+		<div><a href="./gameinfo.html"><img src="" alt="">玩法简介</a></div>
+		<div><a href="./userinfo.html"><img src="" alt="">个人中心</a></div>
+		<div><a href="" onclick="javascript:alert('功能添加中！');"><img src="" alt="">在线客服</a></div>
+		</div>
+		</div>
+	<!-- 顶部导航栏结束 -->
+	<!-- 倒计时+上期开始 -->
+		<div name='daojishi' class="daojishi">
+			<div name='jishiqi' class="jishiqi">
+				<div><p>第2018-06-12期预售中</p></div>
+				<div>08&nbsp;:&nbsp;30</div>
+			</div>
+			<div name='shangqi' class="shangqi">
+				<div name='' class="" id="shangqifont">上期开奖号为：</div>
+				<div><p>1</p><img src="./images/yu-logo.png" alt=""></div>
+				<div><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+				<div><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+			</div>
+		</div>
+	<!-- 倒计时+上期结束 -->
+		<!-- 游戏面板开始 -->
+		<div name="content" class="content">
+		<!-- 左边个人信息栏开始 -->
+			<div name='xinxi' class='xinxi'>
+				<!-- <div name='wanfa' class="wanfa" id="wanfa">
+					<div id="A" class="current">两骰</div>
+					<div id="B" class="decurrent">三骰</div>
+				</div> -->
+				<div name='userinfo' class="userinfo">
+					<div name='userlogo' class="userlogo">
+					<img src="./images/timg.jpg" style="width: 120px;height: 120px;cursor: pointer;" alt="" onclick="javascript:window.location='./userinfo.html';">
+					</div>
+					<p style="color:rgb(255,160,22);cursor: pointer;" onclick="javascript:window.location='./userinfo.html';">阿狸是小松鼠</p>
+					<div name='' class="gerenxinxi">
+					<p>账户余额：<span>123456.00</span>&nbsp;&nbsp;</p>
+					<p>上次投注：<img src="./images/yu-logo.png" alt=""><img src="./images/yu-logo.png" alt=""><img src="./images/yu-logo.png" alt=""></p>
+					<p>最近登录：<span>2018-4-12 08:00</span></p>
+					</div>
+				</div>
+				<div name='chouma' class="chouma">
+				</div>
+			</div>
+		<!-- 左边个人信息栏结束 -->
+		<!-- -->
+			<div name='yazhuma' class='yazhuma'>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/10.png" alt=""></div>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/50.png" alt=""></div>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/100.png" alt=""></div>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/500.png" alt=""></div>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/1000.png" alt=""></div>
+				<div class="choumaimg" onclick="javascript:alert('投注功能开发中！')"><img src="./images/10000.png" alt=""></div>
+			</div>
+		<!--  -->
+		<!-- 游戏面板开始 -->
+			<div name='gamecontrol' class='gamecontrol'>
+				<div number='1' class=""><span>14.02万</span><div class="number">1</div><img src="./images/hulu.png" alt="点击下注"></div>
+				<div number='2'><span>14.1万</span><div class="number">2</div><img src="./images/gongji.png" alt="点击下注"></div>
+				<div number='3'><span>14.02万</span><div class="number">3</div><img src="./images/qianbi.png" alt="点击下注"></div>
+				<div number='4'><span>14.02万</span><div class="number">4</div><img src="./images/yu.png" alt="点击下注"></div>
+				<div number='5'><span>14.02万</span><div class="number">5</div><img src="./images/xia.png" alt="点击下注"></div>
+				<div number='6'><span>14.02万</span><div class="number">6</div><img src="./images/xie.png" alt="点击下注"></div>
+			</div>
+		<!-- 游戏面板结束 -->
+		<!-- 历史结算栏开始 -->
+			<div name='lishikj' class="lishikj">
+				<div name='biaoti' class="biaoti"><img src="./images/lishijiesuan.png" alt=""></div>
+				<div name='kaijiang' class="kaijiang">
+					<div name='jiang1' class="jiang">
+						<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+					<div name='jiang2' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+					<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+					<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+					<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+						<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+					<div name='jiang3' class="jiang">
+					<div name='qihao' class="qihao" id="qihao"><p>&nbsp;&nbsp;&nbsp;&nbsp;20180622期开奖</p></div>
+						<div class="jiang-logo"><p>1</p><img src="./images/xie-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>2</p><img src="./images/yu-logo.png" alt=""></div>
+						<div class="jiang-logo"><p>3</p><img src="./images/yu-logo.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		<!-- 历史结算栏结束 -->
+		</div>
+		<!-- 游戏面板结束 -->
+	
+	</div>
+<!-- 页面容器结束 -->
+	<!-- 公共页脚开始 -->
+		<div name='footer' class="footer">
+			<p>鱼虾蟹娱乐城</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<p>抵制不良游戏 拒绝盗版游戏</p>
+			<p>注意自我保护 谨防受骗上当</p>
+			<p>适度游戏益脑 沉迷游戏伤身</p>
+			<p>合理安排时间 享受健康生活</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<p>版权所有 © 鱼虾蟹 | 鱼虾蟹娱乐城，您身边的娱乐专家。 京ICP备09162504号-2</p>
+		</div>
+		<!-- 公共页脚结束 -->
+
+</body>
+</html>
