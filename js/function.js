@@ -1,3 +1,12 @@
+// 写入一个投注图案
+function addTouzhu(i) {
+	var a = '<div number="'+i+'"><img src="./images/'+i+'.png" alt=""></div>';
+	$('.touzhukuang').append(a);
+}
+//删除一个已选投注图案
+function removeTouzhu(i) {
+	$('.touzhukuang > [number='+i+']').remove();
+}
 // 查看当前筹码是否被选中
 function choumaCurrent($this) {
 	return $this.hasClass('choumacurrent');
