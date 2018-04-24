@@ -7,6 +7,15 @@ function addTouzhu(i) {
 function removeTouzhu(i) {
 	$('.touzhukuang > [number='+i+']').remove();
 }
+//获取当前下注信息
+function getTouzhu() {
+	var t = $('.touzhukuang > div');
+	var zhunum = '';
+	t.each(function(i,v){
+		zhunum += $(this).attr('number')+',';
+	});
+	return zhunum.substring(0,zhunum.length-1);
+}
 // 查看当前筹码是否被选中
 function choumaCurrent($this) {
 	return $this.hasClass('choumacurrent');

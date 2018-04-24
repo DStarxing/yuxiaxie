@@ -53,13 +53,13 @@ $(function(){
 			layer.prompt({'title':'请输入投注金额'},function(money,index){
 				layer.close(index);
 				layer.confirm('确认您的下注信息',{btn:['下注','取消']},function(touzhunum,index){
-					layer.msg('下注成功');
+					layer.msg('下注成功'+getTouzhu());
 				},function(){
 					layer.msg('已取消下注');
 				});
 		});
 		} else {
-
+			layer.msg('下注成功'+getTouzhu());
 		}
 		
 		console.log(getChouma());

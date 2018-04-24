@@ -278,6 +278,7 @@ body {
 	background-color: rgba(15,43,31,0.6);
 	box-shadow: 10px 10px 5px  rgb(15,43,31);
 	border-radius: 5px;
+	padding-top: 5px;
 }
 .gamecontrol > div {
 	float: left;
@@ -730,14 +731,15 @@ body {
 	box-shadow: 0 0 35px rgba(15,43,31,0.5);
 }
 .touzhukuang > div {
-	border:2px solid blue;
+	/*border:2px solid blue;*/
 	width: 40px;
 	margin-left: 5px;
 	height: 40px;
-	/*border-radius: 7px;*/
+	border-radius: 2px;
 	overflow: hidden;
+	box-shadow: 0 0 35px rgba(220,43,31,0.5);
 }
 .touzhukuang > div img {
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 }
